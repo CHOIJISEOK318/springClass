@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
+
     @Bean
     public MemberService memberService(){
         System.out.println("Call AppConfig.memberService");
@@ -29,6 +30,7 @@ public class AppConfig {
     public OrderService orderService(){
         System.out.println("Call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
+
     }
 
     @Bean
