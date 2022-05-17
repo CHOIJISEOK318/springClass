@@ -17,13 +17,13 @@ public class BeanLifeCycleTest {
 
     @Configuration
     static class LifeCycleConfig{
+
         @Bean
         public NetworkClient networkClient(){
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://hello-spring.dev");
             return networkClient;
         }
-    }
 
-    
+    }
 }
